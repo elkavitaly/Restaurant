@@ -1,0 +1,853 @@
+@font-face{
+	font-family: Sans Forgetica;
+	src: url('/source/SansForgetica-Regular.otf') ;
+}
+body {
+	padding: 0;
+	margin: 0;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	height: 70px;
+	font-size: 24px;
+	text-align: center;
+	padding: 0;
+}
+header .container-fluid {
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
+header .container-fluid .col-sm-2{
+	padding: 0;
+}
+.row_header {
+	padding: 0;
+	margin: 0;
+	margin-left: 0px;
+	border-style: solid;
+	border-width: 0 0 2px 0;
+	border-color: #d8cdce;
+}
+
+.head_el {
+	padding-top: 10px;
+}
+
+.head_link {
+	margin: 25px 0 0 0;
+	font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+    color: black;
+    height: 100%;
+    width: 150px;
+    text-align: center;	
+    vertical-align: middle;
+    position: relative;
+}
+
+
+.sing_up{
+	font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+	background-color: #1d7bcd;
+	width: 100px;
+	color: white;
+}
+.sing_up:hover {
+	background-color: #335e7c;
+}
+
+.sing_in {
+	font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+	background-color: white;
+	width: 100px;
+}
+.sing_in:hover {
+	background-color: #dbdee0;
+}
+
+.slide_image {
+	filter: blur(2px) brightness(60%);
+}
+
+.search_head {
+	align-items: center;
+	width: 70%;
+	
+	font-style: normal;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+
+	font-size: 60px;
+    line-height: 1.125;
+    font-weight: bold;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+    color: white;
+}
+
+.search_elem {
+	margin: 0;
+	padding: 0;
+	width: 70%;
+	height: 100px;
+	position: absolute;
+	top: 350px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.name_place {
+	margin: 0;
+	padding: 0;
+	height: 50px;
+}
+
+.form_in {
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	width: inherit;
+	border-style: none;
+	font-size: 30px;
+	border-radius: 5px;
+	vertical-align: middle;
+	
+}
+
+.date_place {
+	margin: 0px;
+	padding: 0;
+	padding-left: 10px;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.date_in {
+	margin: 0;
+	padding: 0;
+	height: 50px;
+	width: inherit;
+	border-style: none;
+	font-size: 30px;
+	border-radius: 5px;
+	vertical-align: middle;
+	
+}
+
+.submit {
+	background-color: #1d7bcd;
+	color: white;
+	font-family: 'Arial', sans-serif;
+	width: 100%;
+	height: 50px;
+	padding: 0;
+	margin: 0;
+	font-size: 30px;
+	vertical-align: middle;
+}
+
+.submit:hover {
+	background-color: #335e7c;
+}
+
+.popular {
+	height: 100vh;
+	margin: 0 0 10px 0;
+	left: 50%;
+}
+
+.popular_head {
+	
+	text-align: center;
+
+	font-size: 60px;
+    line-height: 1.125;
+    font-weight: bold;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+    color: black;
+}
+
+}
+.popular_table {
+	position: relative;
+	width: 70%;
+}
+
+.pop_place {
+	text-align: center;
+	padding: 5px;
+	vertical-align: middle;
+}
+
+.pop_img {
+	transition: all 250ms ease-in-out;
+}
+
+.pop_place:hover a .pop_img {
+	background-color: black;
+	
+}
+
+.picture_name {
+	height: 170px;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 45px;
+	color: white;
+	text-shadow: 1px 0 1px #000, 
+	0 1px 1px #000, 
+	-1px 0 1px #000, 
+	0 -1px 1px #000;
+	font-weight: bold;
+	z-index: 1;
+	transition: 250ms ease-in-out;
+}
+
+.picture_name:hover {
+	height: 162px;
+	width: 286px;
+	font-size: 40px;
+	color: white;
+	z-index: 1;
+	text-shadow: none;
+	background-color: rgba(0, 0,0,0.5);
+}
+
+.img_place {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 1;
+}
+
+.stock {
+	height: 100vh;
+}
+.stock_text{
+	padding: 50px 0 0 0;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 30px;
+}
+footer {
+	position: relative;
+	height: 50px;
+	font-size: 24px;
+	color: white;
+	background-color: #262020;	
+}
+
+.list_item {
+	padding: 10px;
+	margin: 10px;
+	padding-left: 100px;
+	
+}
+a:hover {
+	text-decoration: none;
+}
+.footer_text {
+	text-align: center;	
+}
+
+.list_tools{
+	padding: 20px;
+	margin: 0;
+	border-style: solid;
+	border-width:  0 0 2px 0;
+	border-color: #d8cdce;
+	width: 70%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.list-col{
+
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 24px;
+	vertical-align: middle;
+}
+
+.info_list {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	margin-left: 30px;
+}
+
+.list_name {
+	padding: 0;
+	margin: 0;
+	font-size: 50px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.list_it{
+	padding: 0;
+	padding-left: 3px;
+	margin: 0;
+	text-align: left;
+}
+
+.cont {
+	background-color: red;
+	height: 100px;
+}
+
+.list_content {
+	width: 50%;
+	transform: translateX(-50%);
+
+}
+
+
+/*Menu bar view*/
+
+
+.menu_col1{
+	padding: 0;
+	margin: 0;
+	width: 90px;
+}
+
+#navbar{
+	height: 60px;	
+	margin-top: 2px;
+	overflow: hidden;
+  	background-color: white	;
+  	z-index: 2;
+  	padding-left: 105px;
+  	font-size: 16px;
+    line-height: 1.125;
+    font-weight: normal;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+    color: black;
+
+}
+
+#navbar a {
+	width: 100%;
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 20px 0 14px 0;
+	text-decoration: none;
+	transition: border 200ms;
+}
+
+#navbar a:hover{
+	/*background-color: #1d7bcd;*/
+	border-style: solid;
+	border-width: 0 0 8px 0;
+	border-color: #1d7bcd;
+}
+
+.sticky {
+	margin: 0 !important;
+	background-color: white !important;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	box-shadow: 0 0 8px 0 black;
+}
+.content{
+	padding: 0;
+	margin: 0;
+}
+.sticky + .content {
+  padding-top: 30px;
+}
+.activem{
+	/*background-color: #1d7bcd;*/
+	font-weight: bold;
+	border-style: solid;
+	border-width: 0 0 10px 0;
+	border-color: #1d7bcd;
+}
+/*//////////////*/
+
+.book{
+	margin: 0;
+	padding: 0 15px 0 15px;
+}
+
+.book_btn {
+	background-color: #1d7bcd;
+	width: 150px;
+	height: 48px;
+	color: white;
+	font-size: 30px;
+    line-height: 1.125;
+    font-weight: 300;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+	vertical-align: middle;
+	padding: 0;
+	margin: -13px 0 0 0;
+	/*margin: -20px 0 16px 0;*/
+}
+.book_btn:hover {
+	background-color: #335e7c;
+}
+
+.item {
+	padding: 0;
+	margin: 0;
+	margin-top: 10px;
+	height: calc(100vh - 100px);
+}
+
+.photo_item {
+	padding: 0;
+	padding: 2px 2px 2px 0;
+	margin: 0;
+}
+
+.name_head{
+	margin: 0;
+	padding: 0;
+	width: 90%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	vertical-align: middle;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 10px 0 20px 0;
+	border-style: solid;
+	border-width:  0 0 2px 0;
+	border-color: #d8cdce;
+
+}
+
+.name_item {
+	font-size: 40px;
+    line-height: 1.125;
+    font-weight: bold;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+	color: black;	
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+
+.rev_pict{
+	padding: 0;
+	margin: 0;
+	width: 90%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.review_cont{
+	font-size: 20px;
+    line-height: 1.125;
+    font-weight: 300;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+	color: black;
+	margin: 0;
+	padding: 0;
+	height: calc(100vh - 50px);;
+}
+
+.review_cont .head_row {
+	padding: 0;
+	margin: 0;
+	height: 100px;
+}
+
+.head_rewiew{
+	color: black;
+	width: 90%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	vertical-align: middle;
+	font-size: 40px;
+	font-weight: bold;
+	margin: 10px 0 20px 0;
+	border-style: solid;
+	border-width:  0 0 2px 0;
+	border-color: #d8cdce;
+	padding-bottom: 20px;
+} 
+
+.review_cont .review .col-sm-6 {
+	margin: 0; 
+	padding: 0;
+}
+
+.review {
+	width: 90%;
+	height: calc(100% - 70px);
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	vertical-align: middle;
+	font-size: 16px;
+}
+
+.review .row {
+	margin: 0; 
+	padding: 0;
+}
+
+.grafik {
+	width: 100%;
+	padding: 0;
+	margin: 0 0 20px 20px;
+	font-size: 24px;
+	text-align: left;
+}
+
+.review .container {
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+	font-size: 20px;
+}
+
+.checked {
+    color: orange;
+}
+
+.review h3 {
+	color: #565454;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 0;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.comment{
+	height: 100vh;
+}
+.com_text{
+	height: 50px;
+	width: 300px;
+	margin-bottom: 20px;
+}
+.first_com{
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+.order_head{
+	padding: 0;
+	margin: 10px 0 20px 0;
+	font-size: 40px;
+    line-height: 1.125;
+    font-weight: bold;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+    color: black;
+    text-align: center;
+ 	width: 90%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	border-style: solid;
+	border-width:  0 0 0px 0;
+	border-color: #d8cdce;
+	padding-bottom: 20px;
+    
+}
+
+.input_order{
+	width: 300px;
+	height: 50px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 3px;
+	border-color: #d8cdce;
+	font-size: 34px;
+	line-height: 1.125;
+    font-weight: 300;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+    color: black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    margin: 10px 0 30px 0;
+    text-align: center;
+}
+#date_today{
+	padding: 0;
+}
+label {
+	margin: 20px 0 5px 0;
+	padding: 0;
+	font-size: 24px;
+	line-height: 1.125;
+    font-weight: 300;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+    color: black;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.rest {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 30px; 
+	font-size: 24px;
+	line-height: 1.125;
+    font-weight: 300;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+    color: black;
+    text-align: center;
+    width: 90%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.btn_order{
+	margin: 0;
+	padding: 0;
+	width: 300px;
+    height: 50px;
+	margin-bottom: 30px; 
+	margin-top: 40px;
+	font-size: 30px;
+	line-height: 1.125;
+    font-weight: 300;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+    background-color: #1d7bcd;
+	color: white;
+	vertical-align: middle;
+    text-align: center;
+	position: relative;
+	left: 50%;
+	transform: translateX(calc(-50% + 22px));
+	display: block;
+}
+
+.btn_order:hover {
+	background-color: #335e7c;
+}
+
+
+/*PREVIEW PICTURES VIEW*/
+
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 20%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 15px;
+  left: 50%;
+  top: 50%;
+  width: 70%;
+  height: 90%;
+  overflow: auto;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.modal .container-fluid {
+	margin: 10px 0 0 0; 
+	padding: 0 15px 0 15px;
+	background-color: white;
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+  border-style: none;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+  display: none;
+  background-color: white;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  transform: translateY(-50%);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(29, 123, 205, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img.demo {
+	padding: 5px 5px 5px 5px;
+  	opacity: 0.9;
+}
+
+.activel,
+.demo:hover {
+  opacity: 1;
+  background-color: #1d7bcd;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mySlides img {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+.result{
+	height: calc(100vh - 120px)
+}
+
+
+.result_text{
+	margin: 30px 0 0 0;
+	padding-left: 50px;
+	font-size: 24px;
+	line-height: 1.125;
+    font-weight: 300;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+    text-align: center;
+}
+
+.btn_result{
+	margin: 0;
+	padding: 0;
+	width: 300px;
+    height: 40px;
+	margin-bottom: 24px; 
+	margin-top: 40px;
+	font-size: 30px;
+	line-height: 1.125;
+    font-weight: 300;
+    letter-spacing: .004em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial", sans-serif;
+    background-color: #1d7bcd;
+	color: white;
+	vertical-align: middle;
+    text-align: center;
+	position: relative;
+	left: 50%;
+	transform: translateX(calc(-50% + 22px));
+	display: block;
+}
